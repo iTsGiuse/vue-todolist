@@ -8,12 +8,15 @@ createApp({
         }
     },
     methods: {
+
         Aggiungi() {
             if (this.singolTask.trim() !== '') {
-                this.listTasks.push(this.singolTask);
-                singolTask= "";
+                this.listTasks.unshift(this.singolTask);
+                this.singolTask= "";
             }
-        }
+        }, 
+
+
     },
 
-}).mount(app);
+}).mount('#app');
