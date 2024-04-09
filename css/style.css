@@ -59,14 +59,16 @@ input{
     margin-bottom: 10px;
     margin-left: 30px;
     margin-right: 30px;
-
 }
 .box-text, .box-icona{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .box-text{
     padding-left: 10px;
 }
 .box-icona{
     padding-right: 10px;
+}
+i{
+    cursor: pointer;
 }

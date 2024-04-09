@@ -17,10 +17,10 @@
          <main>
             <div id="add-task" class="box-top">
                 <div class="box-input">
-                    <input type="text" placeholder="Aggiungi un nuovo compito" v-model="singolTask">
+                    <input type="text" placeholder="aggiungi un nuovo compito" v-model="singolTask">
                 </div>
                 <div class="box-btn">
-                    <button class="btn" @click="Aggiungi">Aggiungi</button>
+                    <button class="btn" @click="aggiungi">Aggiungi</button>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
                         <p>{{ unaTask }}</p>
                     </div>
                     <div class="box-icona">
-                        <i class="fas fa-x"></i>
+                        <i class="fas fa-x" @click="elimina(index)"></i>
                     </div>
                 </div>
             </div>
