@@ -17,17 +17,17 @@
          <main>
             <div id="add-task" class="box-top">
                 <div class="box-input">
-                    <input type="text" placeholder="Nuova Task">
+                    <input type="text" placeholder="Aggiungi un nuovo compito" v-model="singolTask">
                 </div>
                 <div class="box-btn">
-                    <button class="btn">Aggiungi</button>
+                    <button class="btn" @click="Aggiungi">Aggiungi</button>
                 </div>
             </div>
 
             <div id="show-task" class="container">
-                <div class="row">
+                <div class="task" v-for="(unaTask, index) in listTasks" :key="index">
                     <div class="box-text">
-                        <p>Fare i compiti</p>
+                        <p>{{ unaTask }}</p>
                     </div>
                     <div class="box-icona">
                         <i class="fas fa-x"></i>
@@ -36,7 +36,7 @@
             </div>
          </main>
     </div>
-
+    <script src="https://unpkg.com/vue@3.2.0"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
